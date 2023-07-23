@@ -44,7 +44,6 @@ def checkRewards(money):
             reward.click()
             money -= cost
             break
-        else:
 
 def currentCookies():
     money2 = driver.find_element(By.ID, value="money").text.split(",")
@@ -57,7 +56,7 @@ def currentCookies():
 playing = True
 
 i = 0
-timeout = time.time() + 30
+timeout = time.time() + 300
 while time.time() <= timeout:
     clickcookie()
     money = currentCookies()
